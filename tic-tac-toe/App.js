@@ -1,6 +1,17 @@
 import React, { useState } from 'react';
-import { View, Text, SafeAreaView, FlatList, StyleSheet, TouchableOpacity, StatusBar, Image, Dimensions } from 'react-native';
+import {
+  View,
+  Text,
+  SafeAreaView,
+  FlatList,
+  StyleSheet,
+  TouchableOpacity,
+  StatusBar,
+  Image,
+  Dimensions,
+} from 'react-native';
 import cloneDeep from 'lodash/cloneDeep';
+import WinnerModal from './WinnerModal';
 
 const {height} = Dimensions.get('window');
 const logoUrl = 'https://geekmode.tech/wp-content/uploads/2022/02/logo-blue-with-icon.png';
@@ -8,45 +19,48 @@ const logoUrl = 'https://geekmode.tech/wp-content/uploads/2022/02/logo-blue-with
 const App = () => {
   const boxes = ['','','','','','','','',''];
   const [array, setArray] = useState(boxes);
-  const [tikTackTow, setTickTackTow] = useState('');
+  const [message, setMessage] = useState('');
+  const [modalVisible, setModalVisible] = useState(false);
 
   const horizontal = (tempArray, value) => {
     if (tempArray[0] === value && tempArray[1] === value && tempArray[2] === value) {
-      return setTickTackTow('Winner!');
+      setMessage('Winner!');
+      setModalVisible(!modalVisible);
     }
     if (tempArray[3] === value && tempArray[4] === value && tempArray[5] === value) {
-      return setTickTackTow('Winner!');
+      setMessage('Winner!');
+      setModalVisible(!modalVisible);
     }
     if (tempArray[6] === value && tempArray[7] === value && tempArray[8] === value) {
-      return setTickTackTow('Winner!');
+      setMessage('Winner!');
+      setModalVisible(!modalVisible);
     }
-
-    return setTickTackTow('');
   };
 
   const vertical = (tempArray, value) => {
     if (tempArray[0] === value && tempArray[3] === value && tempArray[6] === value) {
-      return setTickTackTow('Winner!');
+      setMessage('Winner!');
+      setModalVisible(!modalVisible);
     }
     if (tempArray[1] === value && tempArray[4] === value && tempArray[7] === value) {
-      return setTickTackTow('Winner!');
+      setMessage('Winner!');
+      setModalVisible(!modalVisible);
     }
     if (tempArray[2] === value && tempArray[5] === value && tempArray[8] === value) {
-      return setTickTackTow('Winner!');
+      setMessage('Winner!');
+      setModalVisible(!modalVisible);
     }
-
-    return setTickTackTow('');
   };
 
   const diagonal = (tempArray, value) => {
     if (tempArray[0] === value && tempArray[4] === value && tempArray[8] === value) {
-      return setTickTackTow('Winner!');
+      setMessage('Winner!');
+      setModalVisible(!modalVisible);
     }
     if (tempArray[2] === value && tempArray[4] === value && tempArray[6] === value) {
-      return setTickTackTow('Winner!');
+      setMessage('Winner!');
+      setModalVisible(!modalVisible);
     }
-
-    return setTickTackTow('');
   };
 
   const getTheWinner = (tempArray, value) => {
@@ -59,7 +73,13 @@ const App = () => {
 
   const resetGameButtonPressed = () => {
     setArray(boxes);
-    setTickTackTow('');
+    setMessage('');
+  };
+
+  const closeModal = () => {
+    setArray(boxes);
+    setMessage('');
+    setModalVisible(!modalVisible);
   };
 
   return (
@@ -102,6 +122,11 @@ const App = () => {
           </TouchableOpacity>
         </View>
       </SafeAreaView>
+      <WinnerModal
+        modalVisible={modalVisible}
+        closeModal={closeModal}
+        message={message}
+      />
     </>
   );
 };
