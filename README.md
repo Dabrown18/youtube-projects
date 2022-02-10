@@ -17,7 +17,6 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
 <a href="https://www.linkedin.com/in/darronreginaldbrown/">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
@@ -45,23 +44,19 @@
     <br />
     <br />
   </p>
+<div style="justify-content: space-between;" align="center">
+    <img width="250" height="502" src="images/image_1.png">
+    <img width="250" height="502" src="images/image_2.png">
+    <img width="250" height="502" src="images/image_3.png">
+</div>
 </div>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-There are many great React Native sources available; however, I didn't find one that really suited my needs as a beginner, so I created this school. I want to create a school so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be wasting money; purchasing, book after and course after course
-* You should have resource you can reference for the rest of your career
-
-Of course, no one course will serve all your needs, since your needs may be different. So I'll be adding courses in the near future. You may also suggest courses by contacting me on Slack or emailing me at contact@GeekMODE.tech. Thanks to all the people have contributed to this program!
+This is a React Native application for beginners. In this course we are going to cover commonly used components in React Native. The goal of this course is to get you comfortable being creative with React Native, so that you can apply that creativity to your own projects.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 ### Built With
 
@@ -69,6 +64,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 * [React](https://reactjs.org/)
 * [React Native](https://reactnative.dev/)
+* [cloneDeep](https://www.geeksforgeeks.org/lodash-_-clonedeep-method/)
 * [XCode](https://developer.apple.com/xcode/)
 * [Android Studio](https://developer.android.com/studio)
 
@@ -94,6 +90,45 @@ _Below is an example of how you can instruct your audience on installing and set
    git clone https://github.com/Dabrown18/youtube-projects.git
    ```
 
+2. Change your directory to the project
+   ```sh
+   cd youtube-projects
+   ```
+
+3. Check out the project branch
+   ```sh
+   git checkout tic_tac_toe
+   ```
+
+4. Change your directory to the project
+   ```sh
+   cd tic-tac-toe
+   ```
+
+5. Run the command yarn install or npm install to install dependencies
+   ```sh
+   yarn install
+   ```
+   ```sh
+   npm install
+   ```
+
+6. Change your directory to ios directory and install your pods
+   ```sh
+   cd ios && pod install
+   ```
+
+7. Go back to the project directory and run the command yarn start or npm start to start the metro bundler
+   ```sh
+   cd .. && yarn start
+   ```
+   ```sh
+   cd .. && npm start
+   ```
+
+8. `npx react-native run-ios` is one way to run your app. You can also run it directly from within Xcode.
+
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- PROJECTS -->
@@ -101,6 +136,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 Here is a list of all the repos. 
 
+* [Project Home](https://github.com/Dabrown18/youtube-projects)
 * [Tic Tac Toe](https://github.com/Dabrown18/youtube-projects/tree/tic_tac_toe)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -114,21 +150,3 @@ Project Link: [https://github.com/Dabrown18/youtube-projects](https://github.com
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
