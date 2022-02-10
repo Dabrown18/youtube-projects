@@ -101,7 +101,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 Here is a list of all the repos. 
 
-* [Tick Tack Toe](https://github.com/Dabrown18/youtube-projects/tree/tick_tack_toe)
+* [Tic Tac Toe](https://github.com/Dabrown18/youtube-projects/tree/tic_tac_toe)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
