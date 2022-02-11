@@ -102,6 +102,7 @@ _Below is an example of how you can instruct your audience on installing and set
 Here is a list of all the repos. 
 
 * [Tic Tac Toe](https://github.com/Dabrown18/youtube-projects/tree/tic_tac_toe)
+* [Localization](https://github.com/Dabrown18/youtube-projects/tree/localization)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
