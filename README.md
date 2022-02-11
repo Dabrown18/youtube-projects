@@ -139,6 +139,7 @@ Here is a list of all the repos.
 
 * [Project Home](https://github.com/Dabrown18/youtube-projects)
 * [Tic Tac Toe](https://github.com/Dabrown18/youtube-projects/tree/tic_tac_toe)
+* [Localization](https://github.com/Dabrown18/youtube-projects/tree/localization)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
