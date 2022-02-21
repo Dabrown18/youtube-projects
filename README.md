@@ -19,13 +19,13 @@
 -->
 [![Contributors][contributors-shield]][contributors-url]
 <a href="https://www.linkedin.com/in/darronreginaldbrown/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
 <a href="https://www.youtube.com/channel/UC7Cjb-mb8cfkdr_EQwDm97g">
-    <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
+<img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
 </a>
 <a href="https://www.instagram.com/iamdarronbrown/">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+<img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
 </a>
 
 
@@ -45,23 +45,27 @@
     <br />
     <br />
   </p>
+<div style="justify-content: space-between;" align="center">
+    <img width="250" height="502" src="images/image_1.png">
+    <img width="250" height="502" src="images/image_2.png">
+</div>
 </div>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-There are many great React Native sources available; however, I didn't find one that really suited my needs as a beginner, so I created this school. I want to create a school so amazing that it'll be the last one you ever need -- I think this is it.
+This is a React Native application for beginners. In this course we are going to take a quick look at state management.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be wasting money; purchasing, book after and course after course
-* You should have resource you can reference for the rest of your career
+What you will learn:
+* The meaning of State Management
+* What are actions
+* How it is used in real world applications
+* How to use Hooks to update the state
 
 Of course, no one course will serve all your needs, since your needs may be different. So I'll be adding courses in the near future. You may also suggest courses by contacting me on Slack or emailing me at contact@GeekMODE.tech. Thanks to all the people have contributed to this program!
 
+
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 ### Built With
 
@@ -94,15 +98,50 @@ _Below is an example of how you can instruct your audience on installing and set
    git clone https://github.com/Dabrown18/youtube-projects.git
    ```
 
+2. Change your directory to the project
+   ```sh
+   cd youtube-projects
+   ```
+
+3. Check out the project branch
+   ```sh
+   git checkout state_management_todos_example
+   ```
+
+4. Change your directory to the project
+   ```sh
+   cd Statemanagement
+   ```
+
+5. Run the command `yarn install` or `npm install` to install dependencies
+
+6. Change your directory to ios directory and install your pods
+   ```sh
+   cd ios && pod install
+   ```
+
+7. Go back to the project directory and run the command yarn start or npm start to start the metro bundler
+   ```sh
+   cd .. && yarn start
+   ```
+   ```sh
+   cd .. && npm start
+   ```
+
+8. `npx react-native run-ios` is one way to run your app. You can also run it directly from within Xcode.
+
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- PROJECTS -->
 ### Projects
 
-Here is a list of all the repos. 
+Here is a list of all the repos.
 
+* [Project Home](https://github.com/Dabrown18/youtube-projects)
 * [Tic Tac Toe](https://github.com/Dabrown18/youtube-projects/tree/tic_tac_toe)
 * [Localization](https://github.com/Dabrown18/youtube-projects/tree/localization)
+* [Todos (State Management)](https://github.com/Dabrown18/youtube-projects/tree/state_management_todos_example)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
